@@ -109,6 +109,7 @@ export default {
       mouseStartX: 0, // 拖拽开始位置
       tag: false, // 拖拽开始结束的标志，当开始拖拽，它的值才会变成true
       volume: 50, // 音量，默认一半
+      openLyric: false, // 是否打开歌词
       toggle: true // 显示隐藏播放器页面
     }
   },
@@ -385,7 +386,13 @@ export default {
     },
     // 转向歌词页面
     toLyric() {
-      this.$router.push({ path: `/lyric` })
+      if (!this.openLyric) {
+        this.$router.push({ path: `/lyric` })
+        this.openLyric = true
+      } else {
+        this.$router.go(-1)
+        this.openLyric = false
+      }
     },
     // 下载音乐
     download() {
