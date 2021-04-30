@@ -1,13 +1,13 @@
 <template>
-<div class="login-logo">
+  <div class="login-logo">
     <svg class="icon">
-        <use xlink:href="#icon-erji"></use>
+      <use xlink:href="#icon-erji"></use>
     </svg>
-</div>
+  </div>
 </template>
 <script>
 export default {
-    name: 'login-logo'
+  name: 'login-logo'
 }
 </script>
 

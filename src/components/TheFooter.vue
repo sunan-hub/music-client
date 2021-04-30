@@ -1,6 +1,6 @@
 <template>
   <div class="the-footer">
-    <p>放松与激情</p>
+    <p>放松与兴奋</p>
     <p>Ctrl+C ©2021</p>
   </div>
 </template>
